@@ -30,9 +30,6 @@ build-backend = "maturin"
 managed = true
 dev-dependencies = [
     "pytest>=8.3.2",
-    "ruff>=0.5.6",
-    "tox>=4.17.1",
-    "nbqa[toolchain]>=1.8.7",
 ]
 
 [tool.maturin]

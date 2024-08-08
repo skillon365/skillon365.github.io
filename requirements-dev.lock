@@ -16,41 +16,25 @@ accessible-pygments==0.0.5
     # via pydata-sphinx-theme
 alabaster==1.0.0
     # via sphinx
-astroid==3.2.4
-    # via pylint
 asttokens==2.4.1
     # via stack-data
 attrs==24.2.0
     # via jsonschema
     # via jupyter-cache
     # via referencing
-autopep8==2.3.1
-    # via nbqa
 babel==2.16.0
     # via pydata-sphinx-theme
     # via sphinx
 beautifulsoup4==4.12.3
     # via pydata-sphinx-theme
-black==24.8.0
-    # via blacken-docs
-    # via nbqa
-blacken-docs==1.18.0
-    # via nbqa
-cachetools==5.4.0
-    # via tox
 certifi==2024.7.4
     # via requests
 cfgv==3.4.0
     # via pre-commit
-chardet==5.2.0
-    # via tox
 charset-normalizer==3.3.2
     # via requests
 click==8.1.7
-    # via black
     # via jupyter-cache
-colorama==0.4.6
-    # via tox
 comm==0.2.2
     # via ipykernel
 contourpy==1.2.1
@@ -61,8 +45,6 @@ debugpy==1.8.5
     # via ipykernel
 decorator==5.1.1
     # via ipython
-dill==0.3.8
-    # via pylint
 distlib==0.3.8
     # via virtualenv
 docutils==0.21.2
@@ -77,10 +59,7 @@ fastjsonschema==2.20.0
 feedgen==1.0.0
     # via ablog
 filelock==3.15.4
-    # via tox
     # via virtualenv
-flake8==7.1.1
-    # via nbqa
 fonttools==4.53.1
     # via matplotlib
 greenlet==3.0.3
@@ -103,10 +82,6 @@ ipykernel==6.29.5
 ipython==8.26.0
     # via ipykernel
     # via myst-nb
-    # via nbqa
-isort==5.13.2
-    # via nbqa
-    # via pylint
 jedi==0.19.1
     # via ipython
 jinja2==3.1.4
@@ -126,14 +101,11 @@ jupyter-core==5.7.2
     # via jupyter-client
     # via nbclient
     # via nbformat
-jupytext==1.16.4
-    # via nbqa
 kiwisolver==1.4.5
     # via matplotlib
 lxml==5.2.2
     # via feedgen
 markdown-it-py==3.0.0
-    # via jupytext
     # via mdit-py-plugins
     # via myst-parser
 markupsafe==2.1.5
@@ -143,19 +115,10 @@ matplotlib==3.9.1.post1
 matplotlib-inline==0.1.7
     # via ipykernel
     # via ipython
-mccabe==0.7.0
-    # via flake8
-    # via pylint
 mdit-py-plugins==0.4.1
-    # via jupytext
     # via myst-parser
 mdurl==0.1.2
     # via markdown-it-py
-mypy==1.11.1
-    # via nbqa
-mypy-extensions==1.0.0
-    # via black
-    # via mypy
 myst-nb==1.1.1
     # via skillon365
 myst-parser==4.0.0
@@ -165,10 +128,8 @@ nbclient==0.10.0
     # via myst-nb
 nbformat==5.10.4
     # via jupyter-cache
-    # via jupytext
     # via myst-nb
     # via nbclient
-nbqa==1.8.7
 nest-asyncio==1.6.0
     # via ipykernel
 nodeenv==1.9.1
@@ -179,34 +140,24 @@ numpy==2.0.1
     # via pandas
 packaging==24.1
     # via ablog
-    # via black
     # via ipykernel
-    # via jupytext
     # via matplotlib
     # via pydata-sphinx-theme
-    # via pyproject-api
     # via pytest
     # via sphinx
-    # via tox
 pandas==2.2.2
     # via skillon365
 parso==0.8.4
     # via jedi
-pathspec==0.12.1
-    # via black
 pexpect==4.9.0
     # via ipython
 pillow==10.4.0
     # via matplotlib
 platformdirs==4.2.2
-    # via black
     # via jupyter-core
-    # via pylint
-    # via tox
     # via virtualenv
 pluggy==1.5.0
     # via pytest
-    # via tox
 pre-commit==3.8.0
     # via skillon365
 prompt-toolkit==3.0.47
@@ -217,24 +168,15 @@ ptyprocess==0.7.0
     # via pexpect
 pure-eval==0.2.3
     # via stack-data
-pycodestyle==2.12.1
-    # via autopep8
-    # via flake8
 pydata-sphinx-theme==0.15.4
     # via sphinx-book-theme
-pyflakes==3.2.0
-    # via flake8
 pygments==2.18.0
     # via accessible-pygments
     # via ipython
     # via pydata-sphinx-theme
     # via sphinx
-pylint==3.2.6
-    # via nbqa
 pyparsing==3.1.2
     # via matplotlib
-pyproject-api==1.7.1
-    # via tox
 pytest==8.3.2
 python-dateutil==2.9.0.post0
     # via ablog
@@ -244,11 +186,8 @@ python-dateutil==2.9.0.post0
     # via pandas
 pytz==2024.1
     # via pandas
-pyupgrade==3.17.0
-    # via nbqa
 pyyaml==6.0.2
     # via jupyter-cache
-    # via jupytext
     # via myst-nb
     # via myst-parser
     # via pre-commit
@@ -264,8 +203,6 @@ requests==2.32.3
 rpds-py==0.20.0
     # via jsonschema
     # via referencing
-ruff==0.5.6
-    # via nbqa
 six==1.16.0
     # via asttokens
     # via python-dateutil
@@ -305,17 +242,9 @@ stack-data==0.6.3
     # via ipython
 tabulate==0.9.0
     # via jupyter-cache
-tokenize-rt==6.0.0
-    # via nbqa
-    # via pyupgrade
-tomli==2.0.1
-    # via nbqa
-tomlkit==0.13.0
-    # via pylint
 tornado==6.4.1
     # via ipykernel
     # via jupyter-client
-tox==4.17.1
 traitlets==5.14.3
     # via comm
     # via ipykernel
@@ -326,7 +255,6 @@ traitlets==5.14.3
     # via nbclient
     # via nbformat
 typing-extensions==4.12.2
-    # via mypy
     # via myst-nb
     # via pydata-sphinx-theme
     # via sqlalchemy
@@ -336,7 +264,6 @@ urllib3==2.2.2
     # via requests
 virtualenv==20.26.3
     # via pre-commit
-    # via tox
 watchdog==4.0.1
     # via ablog
 wcwidth==0.2.13
