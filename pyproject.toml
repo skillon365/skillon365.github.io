@@ -5,11 +5,22 @@ description = "Add your description here"
 authors = [
     { name = "cyril chemparathy", email = "cyril@skillon365.com" }
 ]
-dependencies = []
+dependencies = [
+    "ablog>=0.11.10",
+    "matplotlib>=3.9.1.post1",
+    "myst-nb>=1.1.1",
+    "pandas>=2.2.2",
+    "pre-commit>=3.8.0",
+    "pyyaml>=6.0.2",
+    "sphinx-pythia-theme>=2024.4.0",
+]
 readme = "README.md"
 requires-python = ">= 3.12"
 license = { text = "CC-BY-NC-ND-4.0" }
 classifiers = ["Private :: Do Not Upload"]
+
+[project.scripts]
+skillon365 = 'skillon365:hello'
 
 [build-system]
 requires = ["maturin>=1.2,<2.0"]
@@ -17,9 +28,30 @@ build-backend = "maturin"
 
 [tool.rye]
 managed = true
-dev-dependencies = []
+dev-dependencies = [
+    "pytest>=8.3.2",
+    "ruff>=0.5.6",
+    "tox>=4.17.1",
+    "nbqa[toolchain]>=1.8.7",
+]
 
 [tool.maturin]
 python-source = "python"
 module-name = "skillon365._lowlevel"
 features = ["pyo3/extension-module"]
+
+[tool.black]
+line-length = 120
+target-version = ['py38']
+skip-string-normalization = true
+
+[tool.nbqa.config]
+isort = "setup.cfg"
+black = "pyproject.toml"
+
+[tool.nbqa.mutate]
+black = 1
+pyupgrade = 1
+
+[tool.nbqa.addopts]
+pyupgrade = ["--py36-plus"]
