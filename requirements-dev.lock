@@ -59,6 +59,7 @@ fastjsonschema==2.20.0
 feedgen==1.0.0
     # via ablog
 filelock==3.15.4
+    # via maturin-import-hook
     # via virtualenv
 fonttools==4.53.1
     # via matplotlib
@@ -116,6 +117,7 @@ matplotlib-inline==0.1.7
     # via ipykernel
     # via ipython
 maturin==1.7.0
+maturin-import-hook==0.1.0
 mdit-py-plugins==0.4.1
     # via myst-parser
 mdurl==0.1.2
