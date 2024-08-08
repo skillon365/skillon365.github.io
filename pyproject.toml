@@ -1,0 +1,25 @@
+[project]
+name = "skillon365"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "cyril chemparathy", email = "cyril@skillon365.com" }
+]
+dependencies = []
+readme = "README.md"
+requires-python = ">= 3.12"
+license = { text = "CC-BY-NC-ND-4.0" }
+classifiers = ["Private :: Do Not Upload"]
+
+[build-system]
+requires = ["maturin>=1.2,<2.0"]
+build-backend = "maturin"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.maturin]
+python-source = "python"
+module-name = "skillon365._lowlevel"
+features = ["pyo3/extension-module"]
