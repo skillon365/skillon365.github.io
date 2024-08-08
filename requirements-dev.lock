@@ -115,6 +115,7 @@ matplotlib==3.9.1.post1
 matplotlib-inline==0.1.7
     # via ipykernel
     # via ipython
+maturin==1.7.0
 mdit-py-plugins==0.4.1
     # via myst-parser
 mdurl==0.1.2
@@ -153,6 +154,7 @@ pexpect==4.9.0
     # via ipython
 pillow==10.4.0
     # via matplotlib
+pip==24.2
 platformdirs==4.2.2
     # via jupyter-core
     # via virtualenv
